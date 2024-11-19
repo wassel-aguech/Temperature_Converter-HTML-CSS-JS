@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <div class="converter">
+        <h2>Temperature Converter</h2>
+        <label for="fromUnit">From:</label>
+        <select id="fromUnit">
+            <option value="C">Celcious</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+            <option value="R">Rankine</option>
+        </select>
+        <label for="toUnit">To:</label>
+        <select id="toUnit">
+            <option value="C">Celcious</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+            <option value="R">Rankine</option>
+        </select>
+        <label for="temperature">Temperature</label>
+        <input type="number" id="temperature" class="enter" placeholder="Enter Temperature">
+        <button onclick="convert()">Convert</button>
+
+        <input type="text" id="result" readonly  placeholder="Result">
+    </div>  
+
+
+    <script src="main.js"></script>
+   
+</body>
+
+</html>
